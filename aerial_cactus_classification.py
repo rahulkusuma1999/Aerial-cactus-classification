@@ -17,17 +17,13 @@ from fastai.metrics import error_rate
 # %reload_ext autoreload
 # %autoreload 2
 # %matplotlib inline
-
-!unzip train.zip
-
+'''
+!unzip train.zipfrom google.colab import files    # to unzip files
+uploaded = files.upload()
 from google.colab import files
 uploaded = files.upload()
-
-from google.colab import files
-uploaded = files.upload()
-
 !unzip test.zip
-
+'''
 test_csv=pd.read_csv('sample_submission.csv')
 
 test_csv.head()
